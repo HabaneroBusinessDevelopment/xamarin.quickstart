@@ -108,6 +108,7 @@
       <DependentUpon>StartNavController.cs</DependentUpon>
     </Compile>
     <Compile Include="PhotoTableViewDataSource.cs" />
+    <Compile Include="NameTableViewDataSource.cs" />
   </ItemGroup>
   <ItemGroup>
     <Compile Include="RootViewController.designer.cs">
