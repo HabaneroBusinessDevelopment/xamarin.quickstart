@@ -2,6 +2,7 @@ using Foundation;
 using System;
 using System.CodeDom.Compiler;
 using UIKit;
+using System.Linq;
 
 namespace QuickStart
 {
@@ -16,7 +17,7 @@ namespace QuickStart
 			
 			base.ViewWillAppear (animated);
 
-			this.TableView.DataSource = new NameTableViewDataSource (MainMenu.MenuOptions);
+			this.TableView.DataSource = new NameTableViewDataSource (MainMenu.MenuOptions.Select(m=>m.Name).ToArray());
 			this.TableView.Delegate = new MainNavDelegate (CoreApp.SharedApp);
 
 		}

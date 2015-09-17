@@ -64,10 +64,7 @@ namespace QuickStart
         }
 
 
-		partial void UIButton28_TouchUpInside (UIButton sender)
-		{
-			//CoreApp.SharedApp.PresentationManager.ShowView(Shared.GameView.CreateCompany);
-		}
+
         #endregion
 
       
